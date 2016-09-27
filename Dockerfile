@@ -12,5 +12,4 @@ RUN wget -q ${CHECKMARX_CX_CLI_URL} -O /tmp/cli.zip && \
 VOLUME /usr/src
 WORKDIR /usr/src
 
-ENTRYPOINT /opt/CxConsolePlugin/runCxConsole.sh
-CMD ["--help"]
+CMD ["/opt/CxConsolePlugin/runCxConsole.sh", "--help"]
